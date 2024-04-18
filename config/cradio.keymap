@@ -103,7 +103,7 @@
                                          &lt NUMB TAB   &kp SPACE     &kp BSPC    &lt SYMB BSPC
                                          
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;/
+            >;
         };
 
         numb_layer {
