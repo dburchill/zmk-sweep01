@@ -63,7 +63,7 @@
         
         combo_lasso {
         	bindings = <&kp RS(LG(N4))>;
-        	key-positions = <11,12> 
+        	key-positions = <11,12>; 
         };
 
         combo_return {
