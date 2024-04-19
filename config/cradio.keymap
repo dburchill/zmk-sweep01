@@ -62,10 +62,10 @@
         };
         
         combo_lasso {
-        	bindings = <&kp RS(LG(N4))>;
+        	bindings = <&kp LG(LC(LS(N4)))>;
         	key-positions = <11 12>;
         };
-
+        
         combo_return {
             bindings = <&kp RETURN>;
             key-positions = <32 29>;
