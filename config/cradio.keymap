@@ -30,12 +30,7 @@
 
 	combos {
         compatible = "zmk,combos";
-
-		combo_esc {
-			bindings = <&kp ESC>;
-			key-positions = <0, 1>;
-		};
-		
+	
         combo_cpy {
             bindings = <&kp LG(C)>;
             key-positions = <21 22>;
