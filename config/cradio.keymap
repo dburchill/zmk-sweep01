@@ -9,7 +9,8 @@
 
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &mt LSHFT k1  &mt LCTRL k2  &mt LALT  k3  &mt LGUI  k4
+// left shift causes a lot of misfirfes 
+#define HRML(k1,k2,k3,k4) &kp k1  &mt LCTRL k2  &mt LALT  k3  &mt LGUI  k4
 #define HRMR(k1,k2,k3,k4) &mt RGUI  k1  &mt RALT  k2  &mt RCTRL k3  &mt RSHFT k4
 
 
@@ -53,6 +54,11 @@
 
         combo_pst_wo {
             bindings = <&kp LS(LG(V))>;
+            key-positions = <22 24>;
+        };
+        
+        combo_pst_wok {
+            bindings = <&kp LA(LS(LG(V)))>;
             key-positions = <23 24>;
         };
 
@@ -128,14 +134,14 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│      !   │    @     │   #      │    $     │    %     │   │   left   │  down    │    up    │  right   │   ;      │
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAP word │    `~    │    ^     │    &     │    *     │   │   HOME   │ PG DN    │   PG UP  │   END    │          │
+        //│ CAP word │    `~    │    ^     │    &     │    *     │   │   HOME   │ PG DN    │   PG UP  │   END    │ CAP word │
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 │          │          │   │          │          │ 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         
         &kp N1       &kp N2      &kp N3      &kp N4     &kp N5         &kp N6      &kp N7     &kp N8     &kp N9     &kp N0
         &kp EXCL     &kp AT      &kp HASH    &kp DLLR   &kp PRCNT      &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI
-        &caps_word   &kp GRAVE   &kp CARET   &kp AMPS   &kp ASTRK      &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &trans
+        &caps_word   &kp GRAVE   &kp CARET   &kp AMPS   &kp ASTRK      &kp HOME    &kp PG_DN  &kp PG_UP  &kp END    &caps_word
                                              &trans     &trans        &trans      &trans
             >;
         };
