@@ -18,6 +18,7 @@
 #define RIG  1
 #define LEF  2
 #define BT   3
+#define NPAD 4
 
 &mt {
     flavor = "balanced";
@@ -118,10 +119,10 @@
         //                                 │ left/TAB │  SPACE   │   │   SHIFT  │right/bspc│ 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         
-         &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
-         HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SEMI)
-         &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-                                     &lt LEF TAB     &kp SPACE      &kp RSHFT  &lt RIG BSPC
+         &kp Q      &kp W      &kp E      &kp R      &kp T             &kp Y      &kp U      &kp I      &kp O      &kp P
+         HRML(A,        S,         D,         F)     &kp G             &kp H      HRMR(J,        K,         L,        SEMI)
+         &kp Z      &kp X      &kp C      &kp V      &kp B             &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+                                     &lt LEF TAB     &lt NPAD SPACE    &kp RSHFT  &lt RIG BSPC
 
             >;
         };
@@ -179,6 +180,25 @@
         &sys_reset   &trans     &trans    &trans     &bt BT_SEL 0     &bt BT_SEL 2  &trans     &trans     &trans    &sys_reset
         &bootloader  &trans     &trans    &trans     &bt BT_SEL 1     &bt BT_SEL 3  &trans     &trans     &trans    &bootloader
         &trans       &trans     &trans    &trans     &bt BT_CLR       &bt BT_SEL 4  &trans     &trans     &trans    &trans
+                                          &trans     &trans           &trans        &trans
+
+            >;
+        };
+
+        npad_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        
+        &trans       &kp N1     &kp N2    &kp N3     &kp N0           &trans  &trans     &trans     &trans    &trans
+        &trans       &kp N4     &kp N5    &kp N6     &trans           &trans  &trans     &trans     &trans    &trans
+        &trans       &kp N7     &kp N8    &kp N9     &trans           &trans  &trans     &trans     &trans    &trans
                                           &trans     &trans           &trans        &trans
 
             >;
