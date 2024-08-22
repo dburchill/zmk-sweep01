@@ -19,6 +19,7 @@
 #define LEF  2
 #define BT   3
 #define NPAD 4
+#define FPAD 5
 
 &mt {
     flavor = "balanced";
@@ -35,7 +36,7 @@
 	
 	    combo_esc {
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <2  3>;
             bindings = <&kp ESC>;
         };
     	
@@ -110,7 +111,7 @@
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │   P      │           
+        //│ Q (f pad)│  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │   P      │           
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │   ;      │            
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -119,7 +120,7 @@
         //                                 │ left/TAB │  SPACE   │   │   SHIFT  │right/bspc│ 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         
-         &kp Q        &kp W      &kp E      &kp R      &kp T             &kp Y      &kp U      &kp I      &kp O      &kp P
+         &lt FPAD Q   &kp W      &kp E      &kp R      &kp T             &kp Y      &kp U      &kp I      &kp O      &kp P
          HRML(A,        S,         D,          F)      &kp G             &kp H      HRMR(J,        K,         L,        SEMI)
          &mt LSHFT Z  &kp X      &kp C      &kp V      &kp B             &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                      &lt LEF TAB     &lt NPAD SPACE    &kp RSHFT  &lt RIG BSPC
@@ -200,6 +201,25 @@
         &trans       &kp N4     &kp N5    &kp N6     &trans           &kp C_VOL_DN  &trans     &trans     &trans    &trans
         &trans       &kp N7     &kp N8    &kp N9     &trans           &kp C_MUTE    &trans     &trans     &trans    &trans
                                           &trans     &trans           &trans        &trans
+
+            >;
+        };
+
+        fpad_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│   xxx    │   f1     │   f2     │    f3    │   f4     │   │   f13    │    f14   │  f15     │          │          │
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │   f5     │   f6     │    f7    │   f8     │   │  Vol Dwn │          │          │          │          │
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │   f9     │   f10    │    f11   │   f12    │   │  Mute    │          │          │          │          │
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        
+        &trans       &kp F1     &kp F2    &kp F3     &kp F4           &kp F13     &kp F14    &kp F15     &kp F16    &kp F17
+        &trans       &kp F5     &kp F6    &kp F7     &kp F8           &kp F18     &kp F19    &kp F20     &kp F21    &kp F22
+        &trans       &kp F9     &kp F10   &kp F11    &kp F12          &kp F23     &kp F24    &trans      &trans     &trans
+                                          &trans     &trans           &trans      &trans
 
             >;
         };
