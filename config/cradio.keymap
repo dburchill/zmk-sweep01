@@ -92,11 +92,11 @@ name: name##_macro {                      \
     bindings       = <keys>;              \
 };
 
-/ {
-    macros {
-        MACRO(vs_idt, &kp LC(K) &kp LC(D))
-    };
-};
+// / {
+//     macros {
+//        MACRO(vs_idt, &kp LC(K) &kp LC(D) )
+//    };
+// };
 
 
 //   behaviors {
