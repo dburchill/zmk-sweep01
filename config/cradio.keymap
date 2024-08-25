@@ -93,18 +93,19 @@ name: name {                               \
 };
 
 
-/ {
-    macros {
-        MACRO(vs_idt, &kp LC(K) &kp LC(D) )
-   };
-};
+// this doesnt work, error on build
+/// {
+//    macros {
+//        MACRO(vs_idt, &kp LC(K) &kp LC(D) )
+//   };
+//};
 
 
-//ZMK_MACRO(vs_idt,
-//        wait-ms = <30>;
-//        tap-ms = <40>;
-//        bindings = <&kp LC(K) &kp LC(D)>;
-//    )
+ZMK_MACRO(vs_idt,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LC(K) &kp LC(D)>;
+    )
 
 //   behaviors {
 //        ht: hold_tap {
