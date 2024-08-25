@@ -78,7 +78,7 @@ combo_##name {                             \
         COMBO(combo_return, &kp RETURN,32 29)
         COMBO(combo_bspc, &kp BSPC, 32 9)
 
-        //COMBO(combo_indt, &vs_idt, 6 7)
+        COMBO(combo_indt, &vs_idt, 6 7)
     };
 
 
