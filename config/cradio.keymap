@@ -101,7 +101,7 @@ name: name##_macro {                      \
 ZMK_MACRO(vs_idt,
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp Z &kp M &kp K>;
+        bindings = <&kp LC(K) &kp LC(D)>;
     )
 
 //   behaviors {
