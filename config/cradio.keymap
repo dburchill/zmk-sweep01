@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 
+#define MACRO(name, keys)                 \
+name: name##_macro {                      \
+    compatible     = "zmk,behavior-macro";\
+    tap-ms         = <1>;                 \
+    wait-ms        = <1>;                 \
+    #binding-cells = <0>;                 \
+    bindings       = <keys>;              \
+};
+
 // Home row mods macro
 // left shift causes a lot of misfirfes 
 #define HRML(k1,k2,k3,k4) &kp k1  &mt LCTRL k2  &mt LALT  k3  &mt LGUI  k4
