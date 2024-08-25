@@ -74,9 +74,11 @@ combo_##name {                             \
         COMBO(combo_pst_wo, &kp LS(LG(V)), 22 24)
         COMBO(combo_pst_wok, &kp LA(LS(LG(V))),23 24)
  		COMBO(combo_app_chgr, &kp LG(SPACE),12 13)
-        COMBO(combo_lasso,&kp LG(LC(LS(N4))), 11 12)
-        COMBO(combo_return,&kp RETURN,32 29)
-        COMBO(combo_bspc,&kp BSPC, 32 9)
+        COMBO(combo_lasso, &kp LG(LC(LS(N4))), 11 12)
+        COMBO(combo_return, &kp RETURN,32 29)
+        COMBO(combo_bspc, &kp BSPC, 32 9)
+
+        COMBO(combo_indt, &vs_idt, 6 7)
     };
 
 
@@ -88,6 +90,12 @@ name: name##_macro {                      \
     wait-ms        = <1>;                 \
     #binding-cells = <0>;                 \
     bindings       = <keys>;              \
+};
+
+/ {
+    macros {
+        MACRO(vs_idt, &kp LC(K) &kp LC(D))
+    };
 };
 
 
