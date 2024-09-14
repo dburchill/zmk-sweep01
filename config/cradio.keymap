@@ -76,6 +76,7 @@ combo_##name {                             \
  		COMBO(combo_app_chgr, &kp LG(SPACE),12 13)
         COMBO(combo_lasso, &kp LG(LC(LS(N4))), 11 12)
         COMBO(combo_return, &kp RETURN,32 29)
+        COMBO(combo_return, &kp RETURN,32 9)
         COMBO(combo_bspc, &kp BSPC, 32 9)
 
         COMBO(combo_indt, &vs_idt, 6 7)
@@ -173,7 +174,7 @@ ZMK_MACRO(vs_idt,
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│    &     │    *     │    -     │     >    │    $     │   │  ^       │    &     │    >     │    (     │    )     │
+        //│    &     │    *     │    -     │     >    │    ~     │   │  ^       │    &     │    >     │    (     │    )     │
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│    "     │    [     │    {     │    (     │   \      │   │  *       │  -       │  =       │    :     │   ;      │
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -181,7 +182,7 @@ ZMK_MACRO(vs_idt,
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         
-        &kp AMPS   &kp STAR   &kp MINUS   &kp GT     &kp DLLR         &kp CARET   &kp AMPS   &kp GT     &kp LPAR   &kp RPAR
+        &kp AMPS   &kp STAR   &kp MINUS   &kp GT     &kp TILDE         &kp CARET   &kp AMPS   &kp GT     &kp LPAR   &kp RPAR
         &kp DQT    &kp LBKT   &kp LBRC    &kp LPAR   &kp BSLH         &kp ASTRK   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
         &kp SQT    &kp RBKT   &kp RBRC    &kp RPAR   &kp PIPE         &trans      &kp UNDER  &kp PLUS   &kp PIPE   &trans
                                           &trans     &trans           &trans      &trans
