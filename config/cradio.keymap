@@ -13,7 +13,8 @@
 // left shift causes a lot of misfirfes 
 #define HRML(k1,k2,k3,k4) &kp k1  &mt LCTRL k2  &mt LALT  k3  &mt LGUI  k4
 #define HRMR(k1,k2,k3,k4) &mt RGUI  k1  &mt RALT  k2  &mt RCTRL k3  &mt RSHFT k4
-
+#define HYP(k1) &mt LS(LC(LA(LGUIE))) k1
+#define MEH(k1) &mt LS(LC(LA)) k1
 
 #define BASE 0
 #define RIG  1
@@ -143,7 +144,7 @@ ZMK_MACRO(vs_idt,
         
          &lt FPAD Q   &kp W      &kp E      &kp R      &kp T             &kp Y      &kp U      &kp I      &kp O      &kp P
          HRML(A,        S,         D,          F)      &kp G             &kp H      HRMR(J,        K,         L,        SEMI)
-         &mt LSHFT Z  &kp X      &kp C      &kp V      &kp B             &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+         &mt LSHFT Z  &kp X      &kp C      &kp V      &kp B             HYP(N)     &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                      &lt LEF TAB     &lt NPAD SPACE    &kp RSHFT  &lt RIG BSPC
 
             >;
