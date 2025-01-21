@@ -77,8 +77,9 @@ combo_##name {                             \
  		COMBO(combo_app_chgr, &kp LG(SPACE),12 13)
         COMBO(combo_lasso, &kp LG(LC(LS(N4))), 11 12)
         COMBO(combo_return, &kp RETURN,32 29)
-        COMBO(combo_bspc, &kp BSPC, 32 9)
+        COMBO(combo_return, &kp RETURN,31 20)
 
+        COMBO(combo_bspc, &kp BSPC, 32 9)
         COMBO(combo_indt, &vs_idt, 6 7)
     };
 
