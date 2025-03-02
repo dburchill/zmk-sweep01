@@ -81,6 +81,10 @@ combo_##name {                             \
 
         COMBO(combo_bspc, &kp BSPC, 32 9)
         COMBO(combo_indt, &vs_idt, 6 7)
+
+        COMBO(combo_bsft, &bs_ft, 8 9)
+        COMBO(combo_bszt, &bs_zt, 18 19)
+
     };
 
 
@@ -88,8 +92,6 @@ combo_##name {                             \
 #define MACRO(name, keys)                  \
 name: name {                               \
     compatible     = "zmk,behavior-macro"; \
-    tap-ms         = <40>;                 \
-    wait-ms        = <30>;                 \
     #binding-cells = <0>;                  \
     bindings       = <keys>;               \
 };
@@ -107,6 +109,18 @@ ZMK_MACRO(vs_idt,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LC(K) &kp LC(D)>;
+    )
+
+ZMK_MACRO(bs_ft,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp N1 &kp N0 &kp TAB >;
+    )
+
+ZMK_MACRO(bs_zt,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp N0 &kp TAB >;
     )
 
 //   behaviors {
