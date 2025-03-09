@@ -85,7 +85,7 @@ combo_##name {                             \
         COMBO(combo_bsft, &bs_ft, 3 4)
         COMBO(combo_bszt, &bs_zt, 13 14)
 
-        COMBO(combo_cpsnip, &kp LS(LG(N2)))
+        COMBO(combo_cpsnip, &kp LS(LG(N2)), 1 2)
     };
 
 
