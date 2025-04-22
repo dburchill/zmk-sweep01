@@ -107,20 +107,20 @@ name: name {                               \
 
 
 ZMK_MACRO(vs_idt,
-        wait-ms = <30>;
+        wait-ms = <10>;
         tap-ms = <40>;
         bindings = <&kp LC(K) &kp LC(D)>;
     )
 
 ZMK_MACRO(bs_ft,
-        wait-ms = <30>;
-        tap-ms = <40>;
+        wait-ms = <10>;
+        tap-ms = <20>;
         bindings = <&kp N1 &kp N0 &kp TAB >;
     )
 
 ZMK_MACRO(bs_zt,
-        wait-ms = <30>;
-        tap-ms = <40>;
+        wait-ms = <10>;
+        tap-ms = <20>;
         bindings = <&kp N0 &kp TAB >;
     )
 
