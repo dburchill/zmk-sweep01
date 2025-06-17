@@ -124,6 +124,32 @@ ZMK_MACRO(bs_zt,
         bindings = <&kp N0 &kp TAB >;
     )
 
+ZMK_MACRO(dt_left,
+        wait-ms = <10>;
+        tap-ms = <20>;
+        bindings = <&kp LC(LEFT) >;
+)
+
+ZMK_MACRO(dt_right,
+        wait-ms = <10>;
+        tap-ms = <20>;
+        bindings = <&kp LC(RIGHT) >;
+)
+
+
+ZMK_MACRO(mc_open,
+        wait-ms = <10>;
+        tap-ms = <20>;
+        bindings = <&kp LC(UP) >;
+)
+
+
+ZMK_MACRO(mc_close,
+        wait-ms = <10>;
+        tap-ms = <20>;
+        bindings = <&kp LC(DOWN) >;
+)
+
 //   behaviors {
 //        ht: hold_tap {
 //            compatible = "zmk,behavior-hold-tap";
