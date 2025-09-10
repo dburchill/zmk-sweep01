@@ -184,7 +184,7 @@ ZMK_MACRO(mc_close,
         //                                 │ left/TAB │  SPACE   │   │   SHIFT  │right/bspc│ 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         
-         &lt FPAD Q   &kp W      &kp E      &kp R      &kp T             &kp Y      &kp U      &kp I      &kp O      &kp P
+         &lt FPAD Q   &kp W      &kp E      &kp R      &mt CLCK T        &kp Y      &kp U      &kp I      &kp O      &kp P
          HRML(A,        S,         D,          F)      &kp G             &kp H      HRMR(J,        K,         L,        SEMI)
          &mt LSHFT Z  &kp X      &kp C      &kp V      HYP(B)             HYP(N)     &kp M      &kp COMMA  &kp DOT    &kp FSLH
                                      &lt LEF TAB     &lt NPAD SPACE    &kp RSHFT  &lt RIG BSPC
